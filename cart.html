@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="cart.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="coffee-icon.png" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="bg-img">
+        <header>
+            <nav>Cart <i class='fas fa-shopping-cart'></i></nav>
+        </header>
+        <div class="list">
+            <form onsubmit="order()">
+                <label for="coffee" class="labe">Your choice:</label>
+                <select id="cof" name="cof" class="kif">
+                    <option id="flat">Flat White-Rs.180</option>
+                    <option id="cap">Cappuccino-Rs.210</option>
+                    <option id="latte">Horchata Latte-Rs.220</option>
+                    <option id="dalgona">Dalgona Coffee-Rs.225</option>
+                    <option id="dalgona">Spongy Plain Cake-Rs.100</option>
+                    <option id="dalgona">Cookies-Rs.80</option>
+                    <option id="dalgona">Mini Pizza-Rs.190</option>
+                </select>
+                <label class="labe">Quantity:</label>
+                <input class="quantity" id="id_form-0-quantity" min="0" name="form-0-quantity" value="1"
+                    type="number" />
+                <button class="button" input type="submit" title="Add to Cart">+</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="cart">
+                <div class="heading3">
+                    <h3>CART</h3>
+                    <div style="color: #fff" id="product-list"></div>
+                </div>
+                <br><label id="T"> Total:</label>
+                <p id="total" style="display: inline">0</p>
+                <br /><br>
+                <button class="checkout">
+                    <a href="checkout.html" target="_self">CHECK OUT</a> <button id="reset"
+                        onclick="reset()" class="re">Reset</button>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

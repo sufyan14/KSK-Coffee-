@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="feedback.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="coffee-icon.png" />
+    <title>Feedback</title>
+</head>
+
+<body>
+    <div class="bgimg">
+        <header>
+            <nav>Feedback Form <i class="fa">&#xf27b;</i></nav>
+        </header>
+
+        <div class="button" onclick="document.getElementById('form').style.display = 'block'; style.display = 'none';">
+            <p id="fee">Give Us Your Valuable Feedback!</p>
+            <h3><button class="of">Open form</button></h3>
+        </div>
+
+        <div style="display: none" id="form">
+            <form class="form"
+                onsubmit="event.preventDefault(); document.getElementById('thanks').style.display = 'block'; style.display = 'none';">
+                <label for="fname">Full Name</label>
+                <br />
+                <input type="text" id="name" />
+                <br />
+                <label for="email">Email</label>
+                <br />
+                <input type="email" id="e" />
+                <br /><br />
+                <label for="no">Contact Number</label>
+                <br />
+                <input type="text" id="e" />
+                <div class="radio">
+                    <p><br />Food Quality:</p>
+                    <br />
+                    <div class="abc">
+                        <input type="radio" name="food" value="Excellent" />
+                        Excellent
+                        <input type="radio" name="food" value="Good" /> Good
+                        <br />
+                        <input type="radio" name="food" value="Average" />
+                        Average
+                        <input type="radio" name="food" value="Dis Satisfied" />
+                        Dis Satisfied
+                    </div>
+                    <p><br />Overall Service Quality:</p>
+                    <br />
+                    <div class="abc">
+                        <input type="radio" name="food2" value="Excellent" />
+                        Excellent
+                        <input type="radio" name="food2" value="Good" /> Good
+                        <br />
+                        <input type="radio" name="food2" value="Average" />
+                        Average
+                        <input type="radio" name="food2" value="Dis Satisfied" />
+                        Dis Satisfied
+                    </div>
+                    <br>
+                     <p>What Bought You Here:</p>
+                    <br />
+                    <div class="abc">
+                        <input type="radio" name="sf" value="Social Media" />
+                        Social Media
+                        <input type="radio" name="sf" value="Friends" />
+                        Friends
+                    </div>
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="thanks" style="display: none;">
+            <h3>Thankyou!</h3>
+        </div>
+    </div>
+</body>
+
+</html>

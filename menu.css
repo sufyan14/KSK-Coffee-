@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(241, 209, 163);
+    color: rgb(7, 7, 7);
+}
+
+nav {
+    background-color: rgb(22, 13, 1);
+    color: #eb9868;
+    font-size: 40;
+    padding: 15px;
+    text-align: center;
+    text-shadow: darkgray;
+    font-family: inherit;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+       
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    margin: 10px;
+    width: 100%;
+}
+
+.heading{
+    color: rgb(22, 13, 1);
+    text-align: center;
+    font-size: 36px;
+    margin: 3px;
+    width: 96.5%;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(250, 229, 199, 0.787);
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(12, 7, 0);
+    background-color: rgba(250, 229, 199, 0.787);
+    padding: 10px;
+    margin: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#text {
+    margin-left: 24px;
+    margin-top: -20px;
+}
+
+.rupees {
+    float: right;
+    font-size: 18px;
+    padding: 3px;
+    font-family: cursive;
+}
+
+.bg-img {
+    background-image: url("bg-menu.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.btn {
+    border: none;
+    background: rgb(22, 13, 1);
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    /* position: absolute; */
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    
+    
+    
+    }
+
+    .btn:hover {
+        color: rgba(21, 13, 2, 0.934) !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: none;
+        /* -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57); */
+        transition: all 0.3s ease 0s;
+        }
